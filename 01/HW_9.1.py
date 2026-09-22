@@ -1,8 +1,7 @@
 def popular_words (text, words):
-    text = text.lower()
     result = {}
     for word in words:
-        result[word] = text.split().count(word)
+        result[word] = text.lower().split().count(word)
     return result
 
 
